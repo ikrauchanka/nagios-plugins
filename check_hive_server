@@ -16,7 +16,7 @@
 # checks that the hive server is running
 #
 
-set cnt=`ps aux | grep hiveserver | grep -v grep | wc -l`
+set cnt=$(ps aux | grep hiveserver | grep -v grep | wc -l)
 
 if ($cnt) then
     echo "OK - hive ok"
